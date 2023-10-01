@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Number Manipulation</title>
+</head>
+<body>
+    <h1>Number Manipulation</h1>
+    
+    <?php
+    $userNumber = "";
+
+    if (isset($_SERVER["REQUEST_METHOD"]) && $_SERVER["REQUEST_METHOD"] === "POST") {
+        if (isset($_POST["number"])) {
+            // Retrieve the entered number from the form
+            $userNumber = $_POST["number"];
+            ?>
+
+            <p>Entered Number: <?php echo $userNumber; ?></p>
+            <p>ceil(<?php echo $userNumber; ?>) = <?php echo ceil($userNumber); ?></p>
+            <p>floor(<?php echo $userNumber; ?>) = <?php echo floor($userNumber); ?></p>
+            <p>round(<?php echo $userNumber; ?>) = <?php echo round($userNumber); ?></p>
+
+            <?php
+        } else {
+            // Handle the case when 'number' is not set in the POST data
+            echo "Please enter a number.";
+        }
+    }
+    ?>
+
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+        <label for="number">Enter a Real Number:</label>
+        <input type="number" step="0.01" name="number" id="number" required>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
+
