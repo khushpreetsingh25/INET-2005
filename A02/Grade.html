@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pizza Order Form</title>
+</head>
+<body>
+    <h2>Pizza Order Form</h2>
+    <form action="Grade1.php" method="post">
+        <label for="size">Select pizza size:</label>
+        <select name="size" id="size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="extra-large">Extra Large</option>
+        </select>
+        <br>
+        <label>Choose your pizza toppings:</label>
+        <input type="checkbox" name="pepperoni" value="pepperoni"> Pepperoni<br>
+        <input type="checkbox" name="cheese" value="cheese"> Cheese (Free)<br>
+        <input type="checkbox" name="olive" value="olive"> Olive<br>
+        <input type="checkbox" name="pineapple" value="pineapple"> Pineapple<br>
+        <input type="checkbox" name="ham" value="ham"> Ham<br>
+        <br>
+        <input type="submit" value="Place Order">
+    </form>
+</body>
+</html>
