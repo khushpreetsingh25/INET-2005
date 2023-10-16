@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="process_registration.php" method="post">
+        <label for="title">Title:</label>
+        <select name="title" id="title">
+            <option value="">Choose Title</option>
+            <option value="Mr">Mr</option>
+            <option value="Mrs">Mrs</option>
+            <option value="Ms">Ms</option>
+            <option value="Dr">Dr</option>
+        </select><br><br>
+
+        <label for="first_name">First Name:</label>
+        <input type="text" name="first_name" id="first_name" required><br><br>
+
+        <label for="last_name">Last Name:</label>
+        <input type="text" name="last_name" id="last_name" required><br><br>
+
+        <label for="street">Street:</label>
+        <input type="text" name="street" id="street" required><br><br>
+
+        <label for="city">City:</label>
+        <input type="text" name="city" id="city" required><br><br>
+
+        <label for="province">Province:</label>
+        <input type="text" name="province" id="province" required><br><br>
+
+        <label for="postal_code">Postal Code:</label>
+        <input type="text" name="postal_code" id="postal_code" required><br><br>
+
+        <label for="country">Country:</label>
+        <select name="country" id="country" required>
+            <option value="">Choose Country</option>
+            <option value="Canada">Canada</option>
+            <option value="USA">USA</option>
+        </select><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="text" name="phone" id="phone" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" required><br><br>
+
+        <label for="newsletter">Subscribe to Newsletter:</label>
+        <input type="checkbox" name="newsletter" id="newsletter"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
