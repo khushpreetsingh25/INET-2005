@@ -1,0 +1,6 @@
+1. Category Entry Form (/categories/create): http://127.0.0.1:8000/categories/create
+2. Master List of Categories (/categories/): http://127.0.0.1:8000/categories
+3. Edit Page for a Category (/categories/{id}/edit): Replace {id} with an actual category ID, e.g., http://127.0.0.1:8000/categories/1/edit
+4. Product Entry Form (/items/create): http://127.0.0.1:8000/items/create
+5. Master List of Products (/items/): http://127.0.0.1:8000/items
+6. Edit Page for a Product (/items/{id}/edit): Replace {id} with an actual item ID, e.g., http://127.0.0.1:8000/items/1/edit
